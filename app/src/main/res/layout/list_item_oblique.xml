@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ak.sh.ay.oblique.ObliqueView
+        android:id="@+id/obliqueView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        app:angle="LEFT_BOTTOM_TO_RIGHT_TOP"
+        app:ending_slant_angle="85"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintDimensionRatio="1:1.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:shadow_height="10"
+        app:starting_slant_angle="85"
+        app:type="image" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
